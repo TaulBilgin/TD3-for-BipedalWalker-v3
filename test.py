@@ -48,7 +48,7 @@ actor.load_state_dict(torch.load("your model name")) # like "BipedalWalker280.pt
 actor.eval()
 
 run = 0  # Initialize episode counter
-while run < 3:  # Run for 10 episodes
+while run < 3:  # Run for 3 episodes
     # Reset the environment and get the initial state
     now_state = env.reset(seed=env_seed)[0]
     step = 0 
