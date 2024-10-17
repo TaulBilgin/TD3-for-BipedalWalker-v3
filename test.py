@@ -42,7 +42,7 @@ torch.cuda.manual_seed(0)
 actor = Actor().to(device)
 
 # Load the pre-trained model weights for the Actor network
-actor.load_state_dict(torch.load("BipedalWalker280.pt")) # like "Pendulum-123.pt"
+actor.load_state_dict(torch.load("your model name")) # like "BipedalWalker280.pt"
 
 # Switch the Actor network to evaluation mode 
 actor.eval()
